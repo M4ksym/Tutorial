@@ -1,0 +1,89 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --logo-color: #ffffff;
+  --main-color: #e5e5e5;
+  --footer-color: #2f303a;
+  --back-human-color: #f5f4fa;
+}
+ul {
+  list-style: none;
+}
+body a {
+  color: var(--primary-text-color);
+}
+/* основной цвет текста #757575 */
+/* цвет заголовков и абзацев 212121# */
+/* цвет логотипа #2196F3  #FFFFFF */
+/* цвет навигации футера color: rgba(255, 255, 255, 0.6);
+ */
+/* цвет фона банера #2F303A; */
+/* цвет мейн #E5E5E5 */
+/* цвет за людьми #F5F4FA*/
+
+/* Site nav */
+.site-nav a {
+  color: var(--title-text-color);
+}
+.buttom {
+  color: var(--logo-color);
+  background-color: var(--accent-color);
+}
+.buttom-secondary:hover{
+ background-color: var(--accent-color);
+ color: var(--logo-color);
+}
+.buttom-primory {
+  color: var(--logo-color);
+  background-color: var(--accent-color);
+}
+.buttom-secondary {
+  color: var(--title-text-color) 
+  background-color: var(--logo-color);
+}
+
+.site-nav :hover {
+  color: var(--accent-color);
+}
+.mail-nav :hover {
+  color: var(--accent-color);
+}
+.site-nav.link.current{
+color: var(--accent-color);
+}
+.nav {
+  background-color: var(--logo-color);
+}
+.section-hero {
+  background-color: var(--footer-color);
+}
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+h1 {
+  color: var(--logo-color);
+}
+.section-cards {
+  background-color: var(--main-color);
+}
+
+.skils {
+  background-color: var(--main-color);
+}
+.skils p {
+  color: var(--primary-text-color);
+}
+.section-team {
+  background-color: var(--back-human-color);
+}
+.section-team p {
+  color: var(--primary-text-color);
+}
+.section-team h3 {
+  color: var(--title-text-color);
+}
+.section-footer {
+  background-color: var(--footer-color);
+}
