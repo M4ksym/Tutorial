@@ -46,9 +46,17 @@ color: var(--accent-color);
 }
 .buttom-primary:hover{
   background-color:#188ce8;
+
+}
+.buttom-primary:focus{
+  background-color: var(#188ce8);
 }
 .buttom-secondary:hover{
  background-color: var(--accent-color);
+ color: var(--logo-color);
+}
+.buttom-secondary:focus{
+  background-color: var(--accent-color);
  color: var(--logo-color);
 }
 
