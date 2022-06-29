@@ -26,18 +26,23 @@ body a {
 .site-nav a {
   color: var(--title-text-color);
 }
-.buttom {
+
+.buttom{
   color: var(--logo-color);
   background-color: var(--accent-color);
+} 
+.buttom-primary {
+  color:var(--logo-color);
+  background-color: var(--accent-color);
+}
+.buttom-primary:hover{
+  background-color:#188ce8;
 }
 .buttom-secondary:hover{
  background-color: var(--accent-color);
  color: var(--logo-color);
 }
-.buttom-primory {
-  color: var(--logo-color);
-  background-color: var(--accent-color);
-}
+
 .buttom-secondary {
   color: var(--title-text-color) 
   background-color: var(--logo-color);
