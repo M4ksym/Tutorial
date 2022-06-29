@@ -6,14 +6,8 @@
   --main-color: #e5e5e5;
   --footer-color: #2f303a;
   --back-human-color: #f5f4fa;
-}
-ul {
-  list-style: none;
-}
-body a {
-  color: var(--primary-text-color);
-}
-/* основной цвет текста #757575 */
+  --color-black:#000000;
+  /* основной цвет текста #757575 */
 /* цвет заголовков и абзацев 212121# */
 /* цвет логотипа #2196F3  #FFFFFF */
 /* цвет навигации футера color: rgba(255, 255, 255, 0.6);
@@ -21,10 +15,54 @@ body a {
 /* цвет фона банера #2F303A; */
 /* цвет мейн #E5E5E5 */
 /* цвет за людьми #F5F4FA*/
+}
+ul {
+  list-style: none;
+}
+body a {
+  color: var(--primary-text-color);
+}
+body {
+  font-family:'Roboto',sans-serif;
+}
+/* logo */
+.logo-top{
+  color: var(--color-black)
+  font-family:'Raleway',cursive;
+  font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+}
+.logo-mid{
+color: var(--logo-color);
+  font-family:'Raleway',cursive;
+  font-weight: 700;
+font-size: 26px;
+line-height:1.2;
+
+}
+.accent {
+  color: var(--accent-color);
+   font-family:'Oleo Script' cursive;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.4;
+}
 
 /* Site nav */
 .site-nav a {
+  font-weight: 500;
+font-size: 14px;
+line-height:1.2;
   color: var(--title-text-color);
+}
+.nav :focus{
+ background-color: var(--accent-color);
+}
+.mail-nav{
+  font-weight: 500;
+font-size: 14px;
+line-height:1.2;
 }
 .site-nav :hover {
   color: var(--accent-color);
@@ -37,6 +75,7 @@ color: var(--accent-color);
 }
 /* Кнопки */
 .buttom{
+  font-family:inherit;
   color: var(--logo-color);
   background-color: var(--accent-color);
 } 
@@ -51,18 +90,24 @@ color: var(--accent-color);
 .buttom-primary:focus{
   background-color: var(#188ce8);
 }
+.buttom-secondary{
+  font-weight: 500;
+ font-size: 16px;
+ line-height:1.6 ;
+}
 .buttom-secondary:hover{
  background-color: var(--accent-color);
  color: var(--logo-color);
 }
 .buttom-secondary:focus{
+  
   background-color: var(--accent-color);
  color: var(--logo-color);
 }
 
 .buttom-secondary {
   color: var(--title-text-color) 
-  background-color: var(--logo-color);
+  background-color: var(--logo-color);  
 }
 /*Мейн*/
 .mail-nav :hover {
@@ -75,9 +120,20 @@ color: var(--accent-color);
 .feature-list .title {
   color: var(--title-text-color);
 }
-
-h1 {
+/* hero */
+.banner{
+  font-weight: 900;
+font-size: 44px;
+line-height:1.4;
+text-align: center;
   color: var(--logo-color);
+}
+.section-title {
+font-weight: 700;
+font-size: 44px;
+line-height:1.4;
+text-align: center;
+  color: var(--title-text-color);
 }
 .section-cards {
   background-color: var(--main-color);
@@ -86,10 +142,23 @@ h1 {
 .skils {
   background-color: var(--main-color);
 }
-.skils p {
+.skils .text {
+  font-weight: 400;
+font-size: 14px;
+line-height:1.7;
   color: var(--primary-text-color);
 }
 /* Наша команда */
+.section-team h3 {
+  font-weight: 500;
+font-size: 16px;
+line-height:1.2;
+}
+.section-team p {
+  font-weight: 400;
+font-size: 16px;
+line-height:1.2;
+}
 .section-team {
   background-color: var(--back-human-color);
 }
@@ -102,4 +171,10 @@ h1 {
 /* Подвал */
 .section-footer {
   background-color: var(--footer-color);
+}
+
+.section-footer .dawn{
+  font-weight: 400;
+font-size: 14px;
+line-height:1.7;
 }
