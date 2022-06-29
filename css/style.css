@@ -26,7 +26,16 @@ body a {
 .site-nav a {
   color: var(--title-text-color);
 }
-
+.site-nav :hover {
+  color: var(--accent-color);
+}
+.site-nav.link.current{
+color: var(--accent-color);
+}
+.nav {
+  background-color: var(--logo-color);
+}
+/* Кнопки */
 .buttom{
   color: var(--logo-color);
   background-color: var(--accent-color);
@@ -47,20 +56,12 @@ body a {
   color: var(--title-text-color) 
   background-color: var(--logo-color);
 }
-
-.site-nav :hover {
-  color: var(--accent-color);
-}
+/*Мейн*/
 .mail-nav :hover {
   color: var(--accent-color);
 }
-.site-nav.link.current{
-color: var(--accent-color);
-}
-.nav {
-  background-color: var(--logo-color);
-}
-.section-hero {
+
+.section-banner {
   background-color: var(--footer-color);
 }
 .feature-list .title {
@@ -73,13 +74,14 @@ h1 {
 .section-cards {
   background-color: var(--main-color);
 }
-
+/* Наши умения */
 .skils {
   background-color: var(--main-color);
 }
 .skils p {
   color: var(--primary-text-color);
 }
+/* Наша команда */
 .section-team {
   background-color: var(--back-human-color);
 }
@@ -89,6 +91,7 @@ h1 {
 .section-team h3 {
   color: var(--title-text-color);
 }
+/* Подвал */
 .section-footer {
   background-color: var(--footer-color);
 }
