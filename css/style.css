@@ -74,6 +74,7 @@ body {
 }
 /* Кнопки */
 .buttom {
+  cursor: pointer;
   font-family: inherit;
   color: var(--logo-color);
   background-color: var(--accent-color);
@@ -82,22 +83,17 @@ body {
   color: var(--logo-color);
   background-color: var(--accent-color);
 }
-.buttom-primary:hover {
+.buttom-primary:hover,
+:focus {
   background-color: #188ce8;
-}
-.buttom-primary:focus {
-  background-color: var(#188ce8);
 }
 .buttom-secondary {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
 }
-.buttom-secondary:hover {
-  background-color: var(--accent-color);
-  color: var(--logo-color);
-}
-.buttom-secondary:focus {
+.buttom-secondary:hover,
+:focus {
   background-color: var(--accent-color);
   color: var(--logo-color);
 }
