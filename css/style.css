@@ -19,11 +19,19 @@
 ul {
   list-style: none;
 }
+h2,
+h3 {
+  color: var(--title-text-color);
+}
 body a {
+  text-decoration: none;
   color: var(--primary-text-color);
 }
 body {
+  color: var(--primary-text-color);
+  font-style: normal;
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
 }
 /* logo */
 .logo-top {
@@ -31,28 +39,28 @@ body {
   font-family: "Raleway", cursive;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
 }
 .logo-mid {
   color: var(--logo-color);
   font-family: "Raleway", cursive;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
 }
 .accent {
   color: var(--accent-color);
   font-family: "Oleo Script" cursive;
   font-weight: 400;
   font-size: 26px;
-  line-height: 1.4;
+  line-height: 1.38;
 }
 
 /* Site nav */
 .site-nav a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
   color: var(--title-text-color);
 }
 .nav :focus {
@@ -61,7 +69,7 @@ body {
 .mail-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
 }
 .site-nav :hover {
   color: var(--accent-color);
@@ -79,6 +87,8 @@ body {
   background-color: var(--accent-color);
 }
 .buttom-primary {
+  padding: 10px 32px;
+  border: none;
   cursor: pointer;
   color: var(--logo-color);
   background-color: var(--accent-color);
@@ -91,7 +101,7 @@ body {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
 }
 .buttom-secondary:hover,
 :focus {
@@ -118,14 +128,14 @@ body {
 .banner {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   color: var(--logo-color);
 }
 .section-title {
   font-weight: 700;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.2;
   text-align: center;
   color: var(--title-text-color);
 }
@@ -133,34 +143,24 @@ body {
   background-color: var(--main-color);
 }
 /* Наши умения */
-.skils {
-  background-color: var(--main-color);
-}
 .skils .text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
-  color: var(--primary-text-color);
+  line-height: 1.71;
 }
 /* Наша команда */
-.section-team h3 {
+.section-team {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 .section-team p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.18;
 }
 .section-team {
   background-color: var(--back-human-color);
-}
-.section-team p {
-  color: var(--primary-text-color);
-}
-.section-team h3 {
-  color: var(--title-text-color);
 }
 /* Подвал */
 .section-footer {
@@ -168,10 +168,11 @@ body {
 }
 .section-footer :hover,
 :focus {
-  color: var(--accent-color);
+  cursor: default;
+  color: var(--logo-color);
 }
 .section-footer .dawn {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
 }
