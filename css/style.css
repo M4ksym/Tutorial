@@ -7,14 +7,7 @@
   --footer-color: #2f303a;
   --back-human-color: #f5f4fa;
   --color-black: #000000;
-  /* основной цвет текста #757575 */
-  /* цвет заголовков и абзацев 212121# */
-  /* цвет логотипа #2196F3  #FFFFFF */
-  /* цвет навигации футера color: rgba(255, 255, 255, 0.6);
- */
-  /* цвет фона банера #2F303A; */
-  /* цвет мейн #E5E5E5 */
-  /* цвет за людьми #F5F4FA*/
+  --bgc-buttom: #188ce8;
 }
 ul {
   list-style: none;
@@ -23,6 +16,7 @@ h2,
 h3 {
   color: var(--title-text-color);
 }
+
 body a {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -62,58 +56,51 @@ body {
 }
 /* Site nav */
 .site-nav a {
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
+  width: 68px;
+  height: 16px;
   color: var(--title-text-color);
 }
-.site-nav :hover,
-:focus,
-:active {
-  color: var(--accent-color);
-}
-
 /* Кнопки */
-.buttom {
-  font-family: inherit;
-  color: var(--logo-color);
-  background-color: var(--accent-color);
-}
 .buttom-primary {
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
   font-family: "Roboto";
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  padding: 10px 32px;
   border: none;
   cursor: pointer;
   color: var(--logo-color);
   background-color: var(--accent-color);
 }
-.buttom-primary:hover,
-:focus {
-  background-color: #188ce8;
+.buttom-primary:hover {
+  background-color: var(--bgc-buttom);
 }
 .buttom-secondary {
+  letter-spacing: 0.03em;
+  font-family: inherit;
   border: none;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-}
-.buttom-secondary:hover,
-:focus {
-  background-color: var(--accent-color);
-  color: var(--logo-color);
-}
-
-.buttom-secondary {
   color: var(--title-text-color);
   background-color: var(--back-human-color);
 }
-/*Мейн*/
-.mail-nav :hover {
+.buttom-secondary:hover {
+  background-color: var(--accent-color);
+  color: var(--logo-color);
+}
+.buttom-secondary:focus {
   color: var(--accent-color);
 }
+
+/*Мейн*/
 
 .section-banner {
   background-color: var(--footer-color);
@@ -121,9 +108,7 @@ body {
 .feature-list .title {
   color: var(--title-text-color);
 }
-.feature-list a {
-  cursor: default;
-}
+
 /* hero */
 .banner {
   width: 696px;
@@ -135,13 +120,28 @@ body {
   text-align: center;
   color: var(--logo-color);
 }
-/* Наши умения */
+/* Наши навыки */
+.skils h2 {
+  width: 376px;
+  height: 42px;
+  text-align: center;
+}
+.skils h3 {
+  width: 270px;
+  height: 16px;
+}
 
 /* Наша команда */
-.section-team {
+
+.section-team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+}
+.section-team h2 {
+  width: 264px;
+  height: 42px;
+  text-align: center;
 }
 .section-team p {
   font-weight: 400;
@@ -155,16 +155,15 @@ body {
 .section-footer {
   background-color: var(--footer-color);
 }
+.section-footer :focus {
+  color: var(--accent-color);
+}
 .adress {
-  cursor: default;
   color: var(--logo-color);
 }
-.adress:hover,
-:focus {
+.adress:focus {
   color: var(--accent-color);
 }
-.dawn:hover,
-:focus {
+.dawn:hover {
   color: var(--accent-color);
-  cursor: default;
 }
