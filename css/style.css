@@ -66,16 +66,12 @@ body {
   line-height: 1.14;
   color: var(--title-text-color);
 }
-.site-nav:focus {
-  background-color: var(--accent-color);
-}
-.mail-nav {
-  font-weight: 500;
-  line-height: 1.14;
-}
-.site-nav :hover :visited {
+.site-nav :hover,
+:focus,
+:active {
   color: var(--accent-color);
 }
+
 /* Кнопки */
 .buttom {
   font-family: inherit;
@@ -83,11 +79,10 @@ body {
   background-color: var(--accent-color);
 }
 .buttom-primary {
+  font-family: "Roboto";
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
   padding: 10px 32px;
   border: none;
   cursor: pointer;
@@ -126,6 +121,9 @@ body {
 .feature-list .title {
   color: var(--title-text-color);
 }
+.feature-list a {
+  cursor: default;
+}
 /* hero */
 .banner {
   width: 696px;
@@ -161,6 +159,12 @@ body {
   cursor: default;
   color: var(--logo-color);
 }
-.dawn {
+.adress:hover,
+:focus {
+  color: var(--accent-color);
+}
+.dawn:hover,
+:focus {
+  color: var(--accent-color);
   cursor: default;
 }
