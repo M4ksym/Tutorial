@@ -108,8 +108,18 @@ body {
 }
 
 /* Кнопки */
-
+.bs {
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+}
+.bs li {
+  margin: 4px;
+}
 .buttom-secondary {
+  padding: 6px 20px;
+  margin-bottom: 50px;
+  margin-top: 94px;
   font-family: inherit;
   border: none;
   cursor: pointer;
@@ -172,6 +182,7 @@ body {
   background-color: var(--bgc-buttom);
 }
 /* Секция карты */
+
 .section-cards {
   width: 1170px;
   padding-left: 15px;
@@ -185,51 +196,95 @@ body {
   flex-wrap: wrap;
 }
 
-/* тут убрать точку перед итем */
-.flex-container > item {
-  margin: 15px;
+.card-item {
+  margin-bottom: 30px;
   width: 370px;
   height: 404px;
 }
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+
 /* Наши навыки */
 
-.skils .item {
+.section-title {
+  display: none;
+}
+
+.section-skils {
+  margin-top: 94px;
+  margin-bottom: 94px;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
-.skils h2 {
-  width: 376px;
-  height: 42px;
-}
-.skils h3 {
+.section-skils > .item {
+  display: block;
   width: 270px;
-  height: 16px;
 }
 
+.work-title {
+  margin-bottom: 94px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.work-cards {
+  margin-bottom: 94px;
+  display: flex;
+}
+.work-cards li {
+  margin-left: 30px;
+}
 /* Наша команда */
-
+.section-team {
+  padding-bottom: 94px;
+  margin: auto;
+  width: 1170px;
+  justify-content: space-around;
+  background-color: var(--back-human-color);
+}
+.section-team h2 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  width: 264px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin: auto;
+}
+.team-list {
+  display: flex;
+}
+.team-list li {
+  height: 368px;
+  width: 270px;
+  margin: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 .section-team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-}
-.section-team h2 {
-  width: 264px;
-  height: 42px;
-  text-align: center;
 }
 .section-team p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
 }
-.section-team {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: var(--back-human-color);
-}
+
 /* Подвал */
 .section-footer {
+  padding-top: 60px;
+  padding-left: 215px;
   width: 1600px;
   height: 252px;
   background-color: var(--footer-color);
@@ -238,10 +293,18 @@ body {
   color: var(--accent-color);
 }
 .adress {
+  display: inline-block;
+  margin-top: 20px;
+}
+.adress {
   color: var(--logo-color);
 }
 .adress:focus {
   color: var(--accent-color);
+}
+.dawn {
+  display: inline-block;
+  margin-top: 9px;
 }
 .dawn:hover {
   color: var(--accent-color);
