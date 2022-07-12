@@ -108,6 +108,7 @@ body {
 }
 
 /* Кнопки */
+
 .bs {
   flex-wrap: wrap;
   justify-content: center;
@@ -141,7 +142,7 @@ body {
 /*Мейн*/
 
 .shadow {
-  display: flex;
+  display: none;
 }
 .feature-list .title {
   color: var(--title-text-color);
@@ -156,7 +157,6 @@ body {
 }
 .banner {
   text-align: center;
-
   padding: 200px 452px 30px 452px;
   font-weight: 900;
   font-size: 44px;
@@ -166,6 +166,7 @@ body {
 }
 
 .buttom-primary {
+  text-align: center;
   border: none;
   cursor: pointer;
   margin: 35px 700px 200px 700px;
@@ -201,13 +202,31 @@ body {
   width: 370px;
   height: 404px;
 }
-
+.card-item .title {
+  margin-left: 24px;
+  margin-top: 20px;
+}
+.card-item p {
+  margin-left: 24px;
+  margin-bottom: 4px;
+}
 .wrapper {
   width: 1170px;
   margin: auto;
 }
 
 /* Наши навыки */
+.images-logo {
+  margin-top: 94px;
+  justify-content: space-around;
+  display: flex;
+}
+.images-logo li {
+  padding: auto;
+  width: 270px;
+  height: 120px;
+  background-color: var(--back-human-color);
+}
 
 .section-title {
   display: none;
@@ -264,18 +283,24 @@ body {
   display: flex;
 }
 .team-list li {
-  height: 368px;
+  height: 428px;
   width: 270px;
   margin: auto;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .section-team h3 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 .section-team p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
