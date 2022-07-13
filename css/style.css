@@ -134,6 +134,8 @@ body {
 .buttom-secondary:hover {
   background-color: var(--accent-color);
   color: var(--logo-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .buttom-secondary:focus {
   color: var(--accent-color);
@@ -154,6 +156,7 @@ body {
   height: 600px;
   top: 80px;
   background-color: var(--footer-color);
+  background-image: url(/images/background-Img.jpg);
 }
 .banner {
   text-align: center;
@@ -181,6 +184,7 @@ body {
 }
 .buttom-primary:hover {
   background-color: var(--bgc-buttom);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* Секция карты */
 
@@ -222,6 +226,9 @@ body {
   display: flex;
 }
 .images-logo li {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
   padding: auto;
   width: 270px;
   height: 120px;
@@ -333,4 +340,53 @@ body {
 }
 .dawn:hover {
   color: var(--accent-color);
+}
+
+/* test-page */
+
+.section-box {
+  width: 1000px;
+
+  color: tomato;
+  margin: auto;
+}
+.box-title {
+  flex-wrap: wrap;
+  display: flex;
+}
+.box:nth-child(1) {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: teal;
+  background-image: url(/images/client/antenna\ 1.svg);
+}
+.box:nth-child(2) {
+  background-repeat: no-repeat;
+  background-position: 150px 100px;
+  background-color: aqua;
+  background-image: url(/images/client/astronaut\ 1.svg);
+}
+.box:nth-child(3) {
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: blue;
+  background-image: url(/images/client/clock\ 1.svg);
+}
+.box:nth-child(4) {
+  background-size: 15px;
+  background-color: rgb(189, 33, 189);
+  background-image: url(/images/client/diagram\ 1.svg);
+}
+
+.box {
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  outline: 1px solid coral;
+}
+.box p {
+  color: white;
+  text-align: center;
+  padding: 10%;
 }
