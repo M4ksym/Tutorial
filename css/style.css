@@ -66,10 +66,10 @@ body {
 /* Site nav */
 
 .nav {
+  border: 1px solid #ececec;
   align-items: center;
   justify-content: space-around;
   display: flex;
-  width: 1600px;
   height: 80px;
   left: 0px;
   top: 0px;
@@ -118,6 +118,7 @@ body {
   margin: 4px;
 }
 .buttom-secondary {
+  border-radius: 4px;
   padding: 6px 20px;
   margin-bottom: 50px;
   margin-top: 94px;
@@ -202,6 +203,7 @@ body {
 }
 
 .card-item {
+  border: 1px solid #eeeeee;
   margin-bottom: 30px;
   width: 370px;
   height: 404px;
@@ -216,6 +218,8 @@ body {
 }
 .wrapper {
   width: 1170px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin: auto;
 }
 
@@ -269,12 +273,15 @@ body {
   margin-left: 30px;
 }
 /* Наша команда */
+.team {
+  width: 1600px;
+  background-color: var(--back-human-color);
+}
 .section-team {
   padding-bottom: 94px;
   margin: auto;
   width: 1170px;
   justify-content: space-around;
-  background-color: var(--back-human-color);
 }
 .section-team h2 {
   padding-top: 94px;
