@@ -124,6 +124,7 @@ body {
   margin-top: 94px;
   font-family: inherit;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   letter-spacing: 0.03em;
   font-weight: 500;
@@ -172,6 +173,7 @@ body {
 .buttom-primary {
   text-align: center;
   border: none;
+  border-radius: 10px;
   cursor: pointer;
   margin: 35px 700px 200px 700px;
   padding: 10px 32px;
@@ -326,22 +328,36 @@ body {
 .section-clients {
   margin: auto;
   width: 1170px;
-  background-color: teal;
 }
 /* H2 */
+
 .clients-title {
+  display: flex;
+  justify-content: center;
   padding-top: 94px;
-  width: 390px;
+  padding-bottom: 50px;
   height: 42px;
   font-size: 36px;
   line-height: 42px;
 }
+
 .clients-list {
   justify-content: space-around;
   display: flex;
   padding-bottom: 94px;
 }
+
+.clients-list li {
+  display: flex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
 /* Подвал */
+
 .section-footer {
   padding-top: 60px;
   padding-left: 215px;
