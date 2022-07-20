@@ -158,7 +158,14 @@ body {
   height: 600px;
   top: 80px;
   background-color: var(--footer-color);
-  background-image: url(/images/background-Img.jpg);
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(/images/background-Img.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .banner {
   text-align: center;
@@ -226,6 +233,7 @@ body {
 }
 
 /* Наши навыки */
+
 .images-logo {
   margin-top: 94px;
   justify-content: space-around;
@@ -348,6 +356,7 @@ body {
 }
 
 .clients-list li {
+  padding-top: 16px;
   display: flex;
   justify-content: center;
   width: 170px;
@@ -402,25 +411,40 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: teal;
-  background-image: url(/images/client/antenna\ 1.svg);
+  background-image: linear-gradient(
+      to top,
+      rgb(0, 0, 0, 0.8),
+      rgb(0, 0, 0, 0.3)
+    ),
+    url(/images/client/antenna\ 1.svg);
 }
 .box:nth-child(2) {
   background-repeat: no-repeat;
-  background-position: 150px 100px;
-  background-color: aqua;
-  background-image: url(/images/client/astronaut\ 1.svg);
+
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), blue),
+    url(/images/client/astronaut\ 1.svg);
 }
 .box:nth-child(3) {
   background-repeat: repeat;
   background-size: cover;
   background-color: blue;
-  background-image: url(/images/client/clock\ 1.svg);
+  background-image: linear-gradient(to right, red, blue);
 }
 .box:nth-child(4) {
   background-size: 15px;
   background-color: rgb(189, 33, 189);
   background-image: url(/images/client/diagram\ 1.svg);
+}
+.box:nth-child(5) {
+  min-width: 1000px;
+  height: 400px;
+  background-image: url(/images/client/antenna\ 1.svg),
+    url(/images/client/astronaut\ 1.svg), url(/images/client/clock\ 1.svg),
+    url(/images/client/diagram\ 1.svg), url(/images/client/1100.svg);
+  background-size: 80px, 100px, 150px, 130px, cover;
+  background-repeat: no-repeat;
+  background-position: top 120px right 130px, top 270px left 230px, center 160px,
+    60px, center;
 }
 
 .box {
