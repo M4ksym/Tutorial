@@ -160,8 +160,8 @@ body {
   background-color: var(--footer-color);
   background-image: linear-gradient(
       to top,
-      rgba(0, 0, 0, 1),
-      rgba(0, 0, 0, 0.1)
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
     ),
     url(/images/background-Img.jpg);
   background-position: center;
@@ -457,4 +457,59 @@ body {
   color: white;
   text-align: center;
   padding: 10%;
+}
+.test-div {
+  width: 1000px;
+  height: 300px;
+}
+.test-buttom {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.test-buttom:hover {
+  background-color: red;
+}
+.test-buttom::before {
+  content: "";
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/client/стрелочка.svg);
+  background-size: contain;
+}
+
+.moob {
+  display: flex;
+  widows: 1600px;
+  height: 300px;
+}
+.noob {
+  width: 500px;
+  height: 50px;
+}
+.noob::before {
+  width: 370px;
+  height: 50px;
+  display: block;
+  content: "";
+  outline: 1px solid red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+}
+.pook::before {
+  background-image: url(/images/client/antenna\ 1.svg);
+}
+.koot::before {
+  background-image: url(/images/client/astronaut\ 1.svg);
+}
+.hook::before {
+  background-image: url(/images/client/clock\ 1.svg);
 }
