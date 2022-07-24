@@ -225,48 +225,58 @@ body {
   margin-left: 24px;
   margin-bottom: 4px;
 }
-.wrapper {
-  width: 1170px;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: auto;
-}
 
 /* Наши навыки */
-
-.images-logo {
-  margin-top: 94px;
-  justify-content: space-around;
-  display: flex;
-}
-.images-logo :hover {
-  background-color: var(--accent-color);
-}
-.images-logo li {
-  align-items: center;
-  justify-content: space-around;
-  display: flex;
-  padding: auto;
-  width: 270px;
-  height: 120px;
-  background-color: var(--back-human-color);
-}
 
 .section-title {
   display: none;
 }
-
-.section-skils {
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: auto;
+}
+.list-skills {
+  display: flex;
+}
+.section-skills {
+  max-width: 1170px;
   margin-top: 94px;
   margin-bottom: 94px;
-  display: flex;
-  justify-content: space-around;
+}
+.list-item {
   flex-wrap: wrap;
-}
-.section-skils > .item {
-  display: block;
+  display: flexbox;
   width: 270px;
+  margin-right: 30px;
 }
+.list-item::before {
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  display: block;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--back-human-color);
+}
+.icon-antena::before {
+  background-image: url(/images/client/antenna\ 1.svg);
+}
+.icon-clock::before {
+  background-image: url(/images/client/clock\ 1.svg);
+}
+.icon-diagram::before {
+  background-image: url(/images/client/diagram\ 1.svg);
+}
+.icon-astronaut::before {
+  background-image: url(/images/client/astronaut\ 1.svg);
+}
+
+/* Work */
 
 .work-title {
   margin-bottom: 94px;
@@ -282,10 +292,31 @@ body {
   margin-bottom: 94px;
   display: flex;
 }
-.work-cards li {
-  margin-left: 30px;
+.list-work {
+  margin-right: 30px;
 }
+.list-work::before {
+  width: 370px;
+  height: 294px;
+  display: block;
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--back-human-color);
+}
+.icon-mac::before {
+  background-image: url(/images/img1.jpg);
+}
+.icon-macbook::before {
+  background-image: url(/images/img2.jpg);
+}
+.icon-ipad::before {
+  background-image: url(/images/img3.jpg);
+}
+
 /* Наша команда */
+
 .team {
   background-color: var(--back-human-color);
 }
@@ -337,6 +368,7 @@ body {
   margin: auto;
   width: 1170px;
 }
+
 /* H2 */
 
 .clients-title {
@@ -397,6 +429,28 @@ body {
 
 /* test-page */
 
+.link-kik {
+  margin: 200px;
+  width: 200px;
+  height: 200px;
+}
+
+.link-instagram {
+  background-repeat: no-repeat;
+  background-image: url(/images/logo/instagram\ 2.svg);
+}
+.link-twitter {
+  background-repeat: no-repeat;
+  background-image: url(/images/logo/twitter\ 1.svg);
+}
+.link-facebook {
+  background-repeat: no-repeat;
+  background-image: url(/images/logo/facebook\ 1.svg);
+}
+.link-linkedin {
+  background-repeat: no-repeat;
+  background-image: url(/images/logo/linkedin\ 1.svg);
+}
 .section-box {
   width: 1000px;
 
@@ -468,7 +522,7 @@ body {
   padding: 10px 20px;
   background-color: teal;
   color: white;
-  border-radius: 3px;
+  border-radius: 5px;
   text-decoration: none;
 }
 
