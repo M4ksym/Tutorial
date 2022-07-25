@@ -22,8 +22,10 @@
   background-position: center;
   background-color: #ccc; */
 }
-ul {
+ul li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 * {
   margin: 0;
@@ -74,23 +76,6 @@ body {
   color: var(--accent-color);
 }
 /* Site nav */
-.item::before {
-  display: flex;
-  content: "";
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-mail::before {
-  width: 16px;
-  height: 12px;
-  background-image: url(/images/logo/mail.svg);
-}
-.icon-phone::before {
-  width: 10px;
-  height: 16px;
-  background-image: url(/images/logo/phone.svg);
-}
 
 .nav {
   display: flex;
@@ -101,6 +86,11 @@ body {
   height: 80px;
   left: 0px;
   top: 0px;
+}
+.conect {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
 }
 .mail-nav :focus {
   color: var(--accent-color);
@@ -117,6 +107,7 @@ body {
 .mail-nav .item + .item {
   margin-left: 50px;
 }
+
 .site-nav :hover {
   color: var(--accent-color);
 }
@@ -179,6 +170,7 @@ body {
 .feature-list .title {
   color: var(--title-text-color);
 }
+
 /* hero */
 
 .section-banner {
@@ -276,34 +268,13 @@ body {
 }
 .list-item {
   flex-wrap: wrap;
-  display: flexbox;
+  display: flex;
   width: 270px;
   margin-right: 30px;
 }
-.list-item::before {
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  display: block;
-  content: "";
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.list-item svg {
   background-color: var(--back-human-color);
 }
-.icon-antena::before {
-  background-image: url(/images/client/antenna\ 1.svg);
-}
-.icon-clock::before {
-  background-image: url(/images/client/clock\ 1.svg);
-}
-.icon-diagram::before {
-  background-image: url(/images/client/diagram\ 1.svg);
-}
-.icon-astronaut::before {
-  background-image: url(/images/client/astronaut\ 1.svg);
-}
-
 /* Work */
 
 .work-title {
@@ -376,7 +347,7 @@ body {
 .team-list {
   display: flex;
 }
-.team-list li {
+.team-item {
   height: 428px;
   width: 270px;
   margin: auto;
@@ -392,6 +363,7 @@ body {
   line-height: 1.18;
 }
 .section-team p {
+  padding-bottom: 10px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -404,6 +376,7 @@ body {
 .section-clients {
   margin: auto;
   width: 1170px;
+  height: 372px;
 }
 
 /* H2 */
@@ -415,7 +388,7 @@ body {
   padding-bottom: 50px;
   height: 42px;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
 }
 
 .clients-list {
@@ -425,7 +398,6 @@ body {
 }
 
 .clients-list li {
-  padding-top: 16px;
   display: flex;
   justify-content: center;
   width: 170px;
@@ -437,22 +409,32 @@ body {
 /* Подвал */
 
 .section-footer {
+  display: flex;
   padding-top: 60px;
   padding-left: 215px;
   width: 1600px;
   height: 252px;
   background-color: var(--footer-color);
 }
+.section-footer div {
+  margin-right: 70px;
+}
+.footer-title {
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-color);
+}
 .section-footer :focus {
   color: var(--accent-color);
 }
 .adress {
-  display: inline-block;
   margin-top: 20px;
-}
-.adress {
   color: var(--logo-color);
 }
+
 .adress:focus {
   color: var(--accent-color);
 }
@@ -462,6 +444,25 @@ body {
 }
 .dawn:hover {
   color: var(--accent-color);
+}
+
+.social-link {
+  justify-content: center;
+  display: flex;
+}
+.icon-Ellipse {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.sent {
+  width: 500px;
+  height: 100px;
+  outline: 1px dashed red;
+}
+.qwe {
+  fill: #afb1b8;
 }
 
 /* test-page */
