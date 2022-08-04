@@ -8,6 +8,8 @@
   --back-human-color: #f5f4fa;
   --color-black: #000000;
   --bgc-buttom: #188ce8;
+  --color-svg: #afb1b8;
+  --footer-icon: rgba(255, 255, 255, 0.1);
   /* display: flex;
   flex-wrap: wrap;
   justify-content: space-around; */
@@ -21,7 +23,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ccc; */
+  /* цвет на свг синий #2196f3 */
+  /* цвет свг серый #afb1b8 */
 }
+
 ul li {
   list-style: none;
   padding: 0;
@@ -50,6 +55,7 @@ body {
   font-size: 14px;
   color: var(--primary-text-color);
 }
+
 /* logo */
 
 .logo-top {
@@ -87,10 +93,19 @@ body {
   left: 0px;
   top: 0px;
 }
-.conect {
+.icon-envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+}
+.icon-smartphone {
   margin-right: 10px;
   width: 10px;
   height: 16px;
+}
+.icon-smartphone:hover {
+  fill: #2196f3;
+  --color5: var(--accent-color);
 }
 .mail-nav :focus {
   color: var(--accent-color);
@@ -275,6 +290,10 @@ body {
 .list-item svg {
   background-color: var(--back-human-color);
 }
+.icon-astronaut {
+  background-color: #000000;
+}
+
 /* Work */
 
 .work-title {
@@ -371,6 +390,15 @@ body {
   font-size: 16px;
   line-height: 1.18;
 }
+.poy {
+  fill: #afb1b8;
+  --color3: var(--back-human-color);
+}
+.poy:hover {
+  fill: #ffffff;
+  --color3: var(--accent-color);
+  border: radius 2px;
+}
 /* сеkция клиенты */
 
 .section-clients {
@@ -404,6 +432,13 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+.roy {
+  fill: #afb1b8;
+}
+.roy:hover {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 
 /* Подвал */
@@ -456,13 +491,20 @@ body {
   height: 50px;
   margin-right: 10px;
 }
+.toy {
+  fill: #ffffff;
+  --color3: var(--footer-icon);
+}
+.toy:hover {
+  fill: #ffffff;
+  --color3: var(--accent-color);
+  border: radius 2px;
+}
+
 .sent {
   width: 500px;
   height: 100px;
   outline: 1px dashed red;
-}
-.qwe {
-  fill: #afb1b8;
 }
 
 /* test-page */
