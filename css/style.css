@@ -618,7 +618,7 @@ body {
 /*  */
 .note {
   transform: translateY(calc(-100%));
-  transition: 1000ms var(--cubic);
+  transition: 1000ms var(--cubic) 500ms;
 }
 .buttom-footer:hover .note {
   transform: translateY(calc(0%));
@@ -664,8 +664,8 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   margin-left: 300px;
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   perspective: 600px;
   outline: 5px solid teal;
 }
@@ -673,60 +673,12 @@ body {
   height: 100%;
   background-color: #188ce8;
   transform: scale(0);
-  transition: transform 1000ms linear;
+  transition: transform 800ms linear;
 }
 .scene:hover .end {
   transform: scale(1) rotate(2turn);
 }
 
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0px;
-  padding: 0;
-}
-.menu-item {
-  position: relative;
-  border-radius: 5px;
-  margin-right: 15px;
-  outline: 2px solid red;
-}
-.menu-item:hover .submenu {
-  display: block;
-}
-.menu-item:hover .menu-link {
-  color: blue;
-  background-color: pink;
-}
-.menu-link {
-  display: block;
-  text-decoration: none;
-  padding: 10px 20px;
-
-  background-color: teal;
-  color: #ffffff;
-
-  transition: background-color 500ms var(--cubic), color 500ms var(--cubic);
-}
-.submenu {
-  position: absolute;
-  display: none;
-  border-radius: 5px;
-
-  margin: 0;
-  top: 100%;
-  left: 0%;
-  width: 100%;
-
-  background-color: #ccc;
-}
-.submenu a {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-.submenu li :hover {
-  color: #000000;
-}
 /*  */
 /*  */
 /*  */
@@ -782,7 +734,7 @@ body {
 
   background-color: #04ff00;
   color: teal;
-  transition: background-color 1000ms var(--cubic), color 1000ms var(--cubic);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 .btn:hover,
 .bth:focus {
@@ -795,7 +747,7 @@ body {
   content: "";
   width: 20px;
   height: 20px;
-  transition: transform 1000ms var(--cubic);
+  transition: transform 250ms var(--cubic);
   border-radius: 10px;
 }
 .btn:before {
@@ -803,7 +755,7 @@ body {
   background-color: red;
 }
 .btn:hover::before {
-  transform: translateY(-40px);
+  transform: translateY(-50px);
 }
 .btn:after {
   position: absolute;
@@ -815,135 +767,3 @@ body {
 .btn:hover::after {
   transform: translateY(calc(-50%));
 }
-/*  */
-/*  */
-/*  */
-/*  */
-
-.box-7 {
-  position: relative;
-
-  margin-left: 600px;
-  width: 500px;
-  height: 500px;
-
-  background-color: darkblue;
-
-  transition: background-color 2000ms var(--cubic),
-    background-color 2000ms var(--cubic);
-}
-.box-7:hover {
-  background-color: pink;
-}
-.box-1 {
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  height: 200px;
-  color: #2196f3;
-
-  transition: color 2000ms var(--cubic), color 2000ms var(--cubic);
-}
-.box-1:hover {
-  color: #ffffff;
-  opacity: 1;
-}
-.box-2 {
-  position: absolute;
-
-  width: 100px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  fill: #e5e5e5;
-}
-
-.section-box {
-  margin: auto;
-  width: 1000px;
-  color: tomato;
-}
-.box-title {
-  flex-wrap: wrap;
-  display: flex;
-}
-.box:nth-child(1) {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(
-      to top,
-      rgb(0, 0, 0, 0.8),
-      rgb(0, 0, 0, 0.3)
-    ),
-    url(/images/client/antenna\ 1.svg);
-}
-.box:nth-child(2) {
-  background-repeat: no-repeat;
-
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), blue),
-    url(/images/client/astronaut\ 1.svg);
-}
-.box:nth-child(3) {
-  background-repeat: repeat;
-  background-size: cover;
-  background-color: blue;
-  background-image: linear-gradient(to right, red, blue);
-}
-.box:nth-child(4) {
-  background-size: 15px;
-  background-color: rgb(189, 33, 189);
-  background-image: url(/images/client/diagram\ 1.svg);
-}
-
-.box {
-  display: flex;
-
-  margin: 10px;
-  width: 400px;
-  height: 200px;
-  outline: 1px solid coral;
-}
-.box p {
-  text-align: center;
-  padding: 10%;
-  color: white;
-}
-/* .menu-top {
-   width: 300px;
-  height: 200px; 
-} */
-
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
-
-/* .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(57, 51, 51, 0.5);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  height: 300px;
-  width: 400px;
-  padding: 15px;
-
-  background-color: #fff;
-} */
