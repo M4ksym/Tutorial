@@ -768,13 +768,39 @@ body {
   transform: translateY(calc(-50%));
 }
 
+/*  */
+/*  */
+
 .test-form {
+  display: flex;
   margin: 50px;
   width: 1400px;
-  height: 500px;
-  outline: 2px solid #04ff00;
+  padding: 30px;
+  outline: 2px solid #757575;
 }
-
+.group {
+  margin-bottom: 20px;
+}
 textarea {
   resize: none;
+}
+.form-field {
+  outline: 2px solid #04ff00;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form-field input {
+  margin: 0;
+  padding: 10px 10px;
+}
+.form-field input::placeholder {
+  color: darkgray;
+}
+.topic-options li {
+  display: flex;
+  align-items: center;
+}
+.topic-options label {
+  margin-left: 10px;
+  font-size: 20px;
 }
