@@ -102,52 +102,78 @@
 
     <section class="test-form">
         <form>
-            <label for="name">Имя</label>
-            <input type="name" name="name" id="name">
 
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel">
-
-            <label for="tel">Почта</label>
-            <input type="email" name="mail" id="mail">
-
-            <div role="group">
-                <input type="checkbox" name="topic" value="HTML" id="HTML">
-                <label for="HTML">HTML</label>
-
-                <input type="checkbox" name="topic" value="CSS" id="CSS">
-                <label for="CSS">CSS</label>
-
-                <input type="checkbox" name="topic" value="js" id="js">
-                <label for="js">JavaScript</label>
+            <div class="form-field">
+                <label for="name">Имя :</label>
+                <input type="name" name="name" id="name" placeholder="Иван " autofocus>
+            </div>
+            <div class="form-field">
+                <label for="tel">Телефон :</label>
+                <input type="tel" name="tel" id="tel" placeholder="+380-**-***-**-42">
             </div>
 
-
-            <div role="group">
-                <input type="radio" name="experience" value="junior" id="junior">
-                <label for="junior">Junior</label>
-
-                <input type="radio" name="experience" value="middle" id="middle">
-                <label for="middle">Middle</label>
-
-                <input type="radio" name="experience" value="senior" id="senior">
-                <label for="senior">Senior</label>
+            <div class="form-field">
+                <label for="tel">Почта :</label>
+                <input type="email" name="mail" id="mail" placeholder="twich@gmail.com">
             </div>
-            <input type="datetime-local" name="date" id="date" min="2022-08-01T12:00">
-            <label for="date">Дата Доклада</label>
 
-            <br>
-            <label for="pdf">Загрузите ваши фото</label>
-            <input type="file" name="pdf" id="pdf">
-            <br>
+            <div role="group" class="group">
+                <h2 class="group-title">Тема работы</h2>
+                <ul class="topic-options">
+                    <li>
+                        <input type="checkbox" name="topic" value="HTML" id="HTML">
+                        <label for="HTML">HTML</label>
+                    </li>
 
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-            <label for="comment">Оставьте ваше мнение</label>
-            <br>
-            <input type="checkbox" name="policy" id="policy">
-            <label for="policy">Соглашаюсь на шерсть</label>
+                    <li>
+                        <input type="checkbox" name="topic" value="CSS" id="CSS">
+                        <label for="CSS">CSS</label>
+                    </li>
 
-            <br>
+                    <li>
+                        <input type="checkbox" name="topic" value="js" id="js">
+                        <label for="js">JavaScript</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div role="group" class="group">
+                <h2 class="group-title">Насколько ты крут</h2>
+                <ul class="topic-options">
+                    <li>
+                        <input type="radio" name="experience" value="junior" id="junior">
+                        <label for="junior">Junior</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="experience" value="middle" id="middle">
+                        <label for="middle">Middle</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="experience" value="senior" id="senior">
+                        <label for="senior">Senior</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-field">
+                <input type="datetime-local" name="date" id="date" min="2022-08-01T12:00">
+                <label for="date">Дата Доклада</label>
+            </div>
+
+            <div class="form-field">
+                <label for="pdf">Загрузите ваши фото</label>
+                <input type="file" name="pdf" id="pdf">
+            </div>
+
+            <div class="form-field">
+                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <label for="comment">Оставьте ваше мнение</label>
+            </div>
+
+            <div class="form-field">
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь на шерсть</label>
+            </div>
+
             <button type="submit">Оставить заявку</button>
         </form>
     </section>
