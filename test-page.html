@@ -87,8 +87,8 @@
 
 
     <!-- modal window -->
-    <!-- <section>
-        <div class="backdrop is-hidden">
+    <section>
+        <!-- <div class="backdrop is-hidden">
             <div class="modal">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, molestias. Ipsam dicta
                     necessitatibus sunt ipsa beatae provident totam ea. Veritatis, nostrum alias cupiditate doloribus
@@ -97,12 +97,63 @@
                     iure!</p>
                 <button>Закрыть</button>
             </div>
-        </div>
-    </section> -->
+        </div> -->
+    </section>
+
+    <section class="test-form">
+        <form>
+            <label for="name">Имя</label>
+            <input type="name" name="name" id="name">
+
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel">
+
+            <label for="tel">Почта</label>
+            <input type="email" name="mail" id="mail">
+
+            <div role="group">
+                <input type="checkbox" name="topic" value="HTML" id="HTML">
+                <label for="HTML">HTML</label>
+
+                <input type="checkbox" name="topic" value="CSS" id="CSS">
+                <label for="CSS">CSS</label>
+
+                <input type="checkbox" name="topic" value="js" id="js">
+                <label for="js">JavaScript</label>
+            </div>
+
+
+            <div role="group">
+                <input type="radio" name="experience" value="junior" id="junior">
+                <label for="junior">Junior</label>
+
+                <input type="radio" name="experience" value="middle" id="middle">
+                <label for="middle">Middle</label>
+
+                <input type="radio" name="experience" value="senior" id="senior">
+                <label for="senior">Senior</label>
+            </div>
+            <input type="datetime-local" name="date" id="date" min="2022-08-01T12:00">
+            <label for="date">Дата Доклада</label>
+
+            <br>
+            <label for="pdf">Загрузите ваши фото</label>
+            <input type="file" name="pdf" id="pdf">
+            <br>
+
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <label for="comment">Оставьте ваше мнение</label>
+            <br>
+            <input type="checkbox" name="policy" id="policy">
+            <label for="policy">Соглашаюсь на шерсть</label>
+
+            <br>
+            <button type="submit">Оставить заявку</button>
+        </form>
+    </section>
 
 
     <!-- footer -->
-
     <footer class="section-footer">
         <div>
             <a class="logo-mid" href="./index.html">Web<span class="accent">Studio</span></a>
