@@ -769,6 +769,7 @@ body {
 }
 
 /*  */
+
 /* form */
 
 /* .test-form {
@@ -785,7 +786,6 @@ textarea {
   resize: none;
 }
 .form-field {
-  outline: 2px solid #04ff00; 
   border-radius: 5px;
   margin-bottom: 20px;
 }
