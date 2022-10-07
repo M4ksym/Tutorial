@@ -87,96 +87,104 @@
 
 
     <!-- modal window -->
-    <!-- <section>
+    <section>
         <div class="backdrop is-hidden">
             <div class="modal">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, molestias. Ipsam dicta
-                    necessitatibus sunt ipsa beatae provident totam ea. Veritatis, nostrum alias cupiditate doloribus
-                    suscipit delectus eius perferendis eum impedit exercitationem maxime possimus minus culpa aut rem
-                    voluptates ullam architecto sint unde magnam. Dignissimos reprehenderit natus rerum fugiat similique
-                    iure!</p>
-                <button type="button">Закрыть</button>
+                <!-- FORM -->
+                <section class="test-form">
+                    <form>
+                        <h2> Оставьте свои данные, мы вам перезвоним</h2>
+                        <div class="form-field">
+                            <label for="name">Имя </label>
+                            <input type="name" name="name" id="name" placeholder=" " autofocus>
+                            <svg class="icon-modal">
+                                <use href="./images/sprite.svg#icon-person-black-18dp-1" width="20" height="20"></use>
+                            </svg>
+
+                        </div>
+                        <div class="form-field">
+                            <label for="tel">Телефон</label>
+                            <input type="tel" name="tel" id="tel" placeholder=" ">
+                            <svg class="icon-modal">
+                                <use href="./images/sprite.svg#icon-phone-black-18dp-1" width="20" height="20"></use>
+                            </svg>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="tel">Почта</label>
+                            <input class="form-label type=" email" name="mail" id="mail" placeholder=" ">
+                            <svg class="icon-modal">
+                                <use href="./images/sprite.svg#icon-email-black-18dp-1" width="20" height="20"></use>
+                            </svg>
+                        </div>
+
+                        <!-- <div role="group" class="group">
+                            <h2 class="group-title">Тема работы</h2>
+                            <ul class="topic-options">
+                                <li>
+                                    <input type="checkbox" name="topic" value="HTML" id="HTML">
+                                    <label for="HTML">HTML</label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" name="topic" value="CSS" id="CSS">
+                                    <label for="CSS">CSS</label>
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" name="topic" value="js" id="js">
+                                    <label for="js">JavaScript</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div role="group" class="group">
+                            <h2 class="group-title">Насколько ты крут</h2>
+                            <ul class="topic-options">
+                                <li>
+                                    <input type="radio" name="experience" value="junior" id="junior">
+                                    <label for="junior">Junior</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="experience" value="middle" id="middle">
+                                    <label for="middle">Middle</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="experience" value="senior" id="senior">
+                                    <label for="senior">Senior</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-field ">
+                            <input type="datetime-local" name="date" id="date" min="2022-08-01T12:00">
+                            <label for="date">Дата Доклада</label>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="pdf">Загрузите ваши фото</label>
+                            <input type="file" name="pdf" id="pdf">
+                        </div> -->
+
+                        <div class="form-field">
+                            <label for="comment">Комментарий</label>
+                            <textarea name="comment" id="comment" placeholder="Введите текст " cols="30"
+                                rows="10"></textarea>
+                        </div>
+
+                        <div class="?">
+                            <input type="checkbox" name="policy" id="policy">
+                            <label for="policy">Соглашаюсь с рассылкой</label>
+                        </div>
+                        <button type="submit" class="go-mail buttom-primary">Отправить</button>
+
+                        <button type="button" class="off-modal">X</button>
+
+                    </form>
+                </section>
             </div>
         </div>
-    </section> -->
-    <!-- FORM -->
-    <!-- <section class="test-form">
-        <form>
+    </section>
 
-            <div class="form-field">
-                <label for="name">Имя :</label>
-                <input type="name" name="name" id="name" placeholder="Иван " autofocus>
-            </div>
-            <div class="form-field">
-                <label for="tel">Телефон :</label>
-                <input type="tel" name="tel" id="tel" placeholder="+380-**-***-**-42">
-            </div>
-
-            <div class="form-field">
-                <label for="tel">Почта :</label>
-                <input type="email" name="mail" id="mail" placeholder="twich@gmail.com">
-            </div>
-
-            <div role="group" class="group">
-                <h2 class="group-title">Тема работы</h2>
-                <ul class="topic-options">
-                    <li>
-                        <input type="checkbox" name="topic" value="HTML" id="HTML">
-                        <label for="HTML">HTML</label>
-                    </li>
-
-                    <li>
-                        <input type="checkbox" name="topic" value="CSS" id="CSS">
-                        <label for="CSS">CSS</label>
-                    </li>
-
-                    <li>
-                        <input type="checkbox" name="topic" value="js" id="js">
-                        <label for="js">JavaScript</label>
-                    </li>
-                </ul>
-            </div>
-
-            <div role="group" class="group">
-                <h2 class="group-title">Насколько ты крут</h2>
-                <ul class="topic-options">
-                    <li>
-                        <input type="radio" name="experience" value="junior" id="junior">
-                        <label for="junior">Junior</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="experience" value="middle" id="middle">
-                        <label for="middle">Middle</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="experience" value="senior" id="senior">
-                        <label for="senior">Senior</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="form-field">
-                <input type="datetime-local" name="date" id="date" min="2022-08-01T12:00">
-                <label for="date">Дата Доклада</label>
-            </div>
-
-            <div class="form-field">
-                <label for="pdf">Загрузите ваши фото</label>
-                <input type="file" name="pdf" id="pdf">
-            </div>
-
-            <div class="form-field">
-                <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-                <label for="comment">Оставьте ваше мнение</label>
-            </div>
-
-            <div class="form-field">
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Соглашаюсь на шерсть</label>
-            </div>
-
-            <button type="submit">Оставить заявку</button>
-        </form>
-    </section> -->
 
 
     <!-- footer -->
