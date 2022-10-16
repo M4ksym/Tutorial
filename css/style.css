@@ -871,3 +871,32 @@ textarea {
   width: 20px;
   height: 20px;
 }
+.ram {
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+.icon-checkbox {
+  margin-right: 10px;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.checkbox:checked + .icon-checkbox {
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icon-check.svg);
+  border-color: transparent;
+  background-color: orange;
+  background-size: contain;
+  background-origin: border-box;
+}
