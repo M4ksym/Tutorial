@@ -111,6 +111,7 @@ body {
 
   color: var(--accent-color);
 }
+
 /* Site nav */
 
 .nav {
@@ -146,24 +147,48 @@ body {
 .site-nav {
   display: flex;
 }
-.nav-item:hover .sub {
-  display: block;
-  background-color: currentColor;
-}
-.sub {
-  position: absolute;
 
-  border-radius: 2px;
-  height: 4px;
-  top: 100%;
-  left: 0%;
-  width: 60%;
-  margin: 0;
-  transform: translate(-5%, 600%);
-}
 .nav-item {
+  margin-right: 50px;
+  top: 10px;
   position: relative;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  /* outline: 1px solid black; */
+  padding: 15px 10px;
 }
+.nav-item::after {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 5px;
+  background-color: #2196f3;
+  /* opacity: 0; */
+  transform: scaleX(0);
+  transition: transform 700ms var(--cubic);
+}
+.nav-item:hover::after {
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  opacity: 1;
+  width: 100%;
+  transform: scaleX(1);
+}
+.nav-item a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+/*  */
 
 .mail-nav {
   display: flex;
@@ -175,17 +200,6 @@ body {
 .site-nav :hover,
 .site-nav :focus {
   color: var(--accent-color);
-}
-
-.site-nav a {
-  margin-right: 50px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  width: 68px;
-  height: 16px;
-  color: var(--title-text-color);
 }
 
 /* Кнопки */
@@ -540,7 +554,6 @@ body {
 
 .section-footer {
   display: flex;
-
   padding-top: 60px;
   padding-left: 215px;
   width: 1600px;
@@ -548,9 +561,7 @@ body {
 
   background-color: var(--footer-color);
 }
-.section-footer div {
-  margin-right: 70px;
-}
+
 .footer-title {
   text-transform: uppercase;
 
@@ -601,17 +612,49 @@ body {
   fill: var(--logo-color);
   --color3: var(--accent-color);
 }
-
+.div-margin {
+  margin-right: 70px;
+}
 .sent {
   display: flex;
+  width: 600px;
+  height: 200px;
 
-  width: 500px;
-  height: 100px;
-  outline: 1px dashed red;
+  justify-content: space-between;
+}
+.footer-mail {
+  margin: 0px;
+  padding: 0px;
 }
 .sent h2 {
+  width: 219px;
+  height: 16px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--logo-color);
 }
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.form-field input {
+  border-radius: 4px;
+  padding-left: 16px;
+  margin: 0;
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
 /*  */
 /*  */
 /*  */
@@ -632,6 +675,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
 
+  margin-top: 35px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -683,39 +727,7 @@ body {
 /*  */
 /*  */
 /*  */
-.gop {
-  display: flex;
-}
-.room {
-  display: flex;
-}
-.link-room {
-  position: relative;
-  text-align: center;
-  width: 100px;
-  height: 50px;
-  display: inline-block;
-  /* outline: 1px solid black; */
-  padding: 15px 10px;
-}
-.link-room::after {
-  display: block;
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 5px;
-  background-color: #2196f3;
-  /* opacity: 0; */
-  transform: scaleY(0);
-  transition: transform 1000ms var(--cubic);
-}
-.link-room:hover::after {
-  /* opacity: 1; */
-  width: 100%;
-  transform: scaleY(1);
-}
+
 /*  */
 /*  */
 /*  */
@@ -727,7 +739,7 @@ body {
 
 /* form */
 
-.test-form h2 {
+/* .test-form h2 {
   margin: 10px;
 }
 
@@ -738,7 +750,6 @@ body {
   width: 100%;
   height: 100%;
 
-  /* outline: 2px solid #757575; */
 }
 
 textarea {
@@ -761,7 +772,7 @@ textarea {
   margin: 0;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-}
+} */
 
 /* .form-field input::placeholder {
   position: absolute;
@@ -780,7 +791,7 @@ textarea {
 
 /* Modal Window */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -865,9 +876,9 @@ textarea {
 }
 .checkbox:checked ~ .field {
   transform: translateX(20px);
-}
+} */
 
-.btn {
+/* .btn {
   position: absolute;
   display: inline-block;
   border: none;
@@ -910,8 +921,8 @@ textarea {
   top: 50%;
   left: 29%;
   background-color: red;
-  transform: translateY(calc(-50% + 40px));
+  transform: translateY(calc(-50% + 50px));
 }
 .btn:hover::after {
   transform: translateY(calc(-50%));
-}
+} */
