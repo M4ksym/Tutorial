@@ -533,9 +533,6 @@ body {
   display: flex;
   justify-content: center;
 
-  width: 170px;
-  height: 92px;
-
   border: 1px solid var(--svg-color);
   border-radius: 4px;
 }
@@ -543,6 +540,8 @@ body {
   border-color: var(--accent-color);
 }
 .roy {
+  width: 170px;
+  height: 93px;
   fill: var(--svg-color);
 }
 .roy:hover,
