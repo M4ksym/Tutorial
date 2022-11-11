@@ -1,0 +1,49 @@
+.work-title {
+  text-align: center;
+  margin-bottom: 94px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
+.work-cards {
+  display: flex;
+  margin-bottom: 94px;
+}
+.list-work p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
+  margin-top: 224px;
+
+  background: rgba(47, 48, 58, 0.8);
+  color: $white-color;
+}
+
+.list-work {
+  display: block;
+
+  margin-right: 30px;
+  width: 370px;
+  height: 294px;
+
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $back-human-color;
+}
+.icon-mac {
+  background-image: url(/images/img1.jpg);
+}
+.icon-macbook {
+  background-image: url(/images/img2.jpg);
+}
+.icon-ipad {
+  background-image: url(/images/img3.jpg);
+}
