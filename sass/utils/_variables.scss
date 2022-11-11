@@ -1,0 +1,42 @@
+$primary-text-color: #757575;
+$title-text-color: #212121;
+$accent-color: #2196f3;
+$white-color: #ffffff;
+$main-color: #e5e5e5;
+$footer-color: #2f303a;
+$back-human-color: #f5f4fa;
+$black-color: #000000;
+$bgc-buttom: #188ce8;
+$svg-color: #afb1b8;
+$footer-icon: rgba(255, 255, 255, 0.1);
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);
+
+ul li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+h2,
+h3 {
+  color: $title-text-color;
+}
+
+body a {
+  text-decoration: none;
+  color: $primary-text-color;
+}
+body {
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  line-height: 1.71;
+  font-size: 14px;
+
+  color: $primary-text-color;
+}
