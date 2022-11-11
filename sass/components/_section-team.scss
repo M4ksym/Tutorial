@@ -1,0 +1,60 @@
+.team {
+  width: 1600px;
+  background-color: $back-human-color;
+}
+.section-team {
+  justify-content: space-around;
+
+  padding-bottom: 94px;
+  margin: auto;
+}
+.section-team h2 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  width: 264px;
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin: auto;
+}
+.team-list {
+  display: flex;
+}
+.team-item {
+  height: 428px;
+  width: 270px;
+  margin: auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.section-team h3 {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.section-team p {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.poy {
+  fill: $svg-color;
+  fill: color3 $back-human-color;
+
+  &:hover,
+  :focus {
+    fill: $white-color;
+    --color3: $accent-color;
+    border: radius 2px;
+  }
+}
