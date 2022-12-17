@@ -55,14 +55,15 @@
   margin-right: 10px;
 }
 .toy {
-  fill: $white-color;
-  $color3: $footer-icon;
+  fill: $svg-color;
+  --color3: red;
+  // $color3: $footer-icon;
 
-  &:hover {
-    border: radius 2px;
-    fill: $white-color;
-    $color3: $accent-color;
-  }
+  // &:hover {
+  //   border: radius 2px;
+  //   // fill: $white-color;
+  //   $color3: $accent-color;
+  // }
 }
 .div-margin {
   margin-right: 70px;
